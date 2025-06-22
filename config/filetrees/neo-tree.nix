@@ -12,9 +12,9 @@
       enableModifiedMarkers = true;
       enableRefreshOnWrite = true;
       closeIfLastWindow = true;
-      groupEmptyDirs = false;
       popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
       buffers = {
+        groupEmptyDirs = false;
         bindToCwd = false;
         followCurrentFile = {
           enabled = true;
