@@ -12,6 +12,7 @@
       enableModifiedMarkers = true;
       enableRefreshOnWrite = true;
       closeIfLastWindow = true;
+      groupEmptyDirs = false;
       popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
       buffers = {
         bindToCwd = false;
@@ -29,25 +30,16 @@
       };
     };
 
-    # keymaps = [
-    #   {
-    #     mode = "n";
-    #     key = "<leader>e";
-    #     action = ":Neotree toggle reveal_force_cwd<cr>";
-    #     options = {
-    #       silent = true;
-    #       desc = "Explorer NeoTree (root dir)";
-    #     };
-    #   }
-    #   {
-    #     mode = "n";
-    #     key = "<leader>E";
-    #     action = "<cmd>Neotree toggle<CR>";
-    #     options = {
-    #       silent = true;
-    #       desc = "Explorer NeoTree (cwd)";
-    #     };
-    #   }
+    keymaps = [
+      {
+        mode = "n";
+        key = "<leader>E";
+        action = "<cmd>Neotree toggle<CR>";
+        options = {
+          silent = true;
+          desc = "Explorer NeoTree (cwd)";
+        };
+      }
     #   {
     #     mode = "n";
     #     key = "<leader>be";
@@ -66,6 +58,6 @@
     #       desc = "Git explorer";
     #     };
     #   }
-    # ];
+    ];
   };
 }

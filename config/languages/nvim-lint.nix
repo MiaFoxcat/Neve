@@ -21,6 +21,7 @@
         java = [ "checkstyle" ];
         haskell = [ "hlint" ];
         bash = [ "shellcheck" ];
+        rust = [ "clippy" ];
       };
     };
   };
