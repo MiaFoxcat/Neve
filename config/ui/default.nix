@@ -26,6 +26,6 @@
     noice.enable = lib.mkDefault false;
     notify.enable = lib.mkDefault true;
     nui.enable = lib.mkDefault true;
-    web-devicons.enable = lib.mkDefault true;
+    web-devicons.enable = lib.mkDefault false;
   };
 }
